@@ -1,0 +1,26 @@
+<suite name="CrossBrowserTestSuite">
+    <test name="Chrome Test">
+        <parameter name="target-browser" value="chrome" />
+        <classes>
+            <class name="testng.Assgn5_5Test" />
+        </classes>
+    </test>
+    <test name="Firefox Test">
+        <parameter name="target-browser" value="firefox" />
+        <classes>
+            <class name="testng.Assgn5_5Test" />
+        </classes>
+    </test>
+    <test name="Microsoft Edge Test">
+        <parameter name="target-browser" value="edge" />
+        <classes>
+            <class name="testng.Assgn5_5Test" />
+        </classes>
+    </test>
+<!--    <test name="Safari Test">-->
+<!--        <parameter name="target-browser" value="safari" />-->
+<!--        <classes>-->
+<!--            <class name="testng.Assgn5_5Test" />-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

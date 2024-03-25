@@ -1,0 +1,51 @@
+[INFO ] 2024-03-20 15:26:55.140 [TestNG-test-Parallel Test-1] TestBase - Opening chrome Browser
+[INFO ] 2024-03-20 15:26:57.759 [TestNG-test-Parallel Test-1] TestBase - Configuring 5 second explicit wait
+[INFO ] 2024-03-20 15:26:57.939 [TestNG-test-Parallel Test-1] TestBase - Navigating to: https://opensource-demo.orangehrmlive.com/
+[INFO ] 2024-03-20 15:27:02.254 [TestNG-test-Parallel Test-1] TestBase - Typing: admin*, into: By.name: username
+[INFO ] 2024-03-20 15:27:03.011 [TestNG-test-Parallel Test-1] TestBase - Typing: admin123, into: By.name: password
+[INFO ] 2024-03-20 15:27:03.266 [TestNG-test-Parallel Test-1] TestBase - Clicking: By.tagName: button
+[DEBUG] 2024-03-20 15:27:03.267 [TestNG-test-Parallel Test-1] TestBase - Using Native Selenium Click
+[INFO ] 2024-03-20 15:27:04.591 [TestNG-test-Parallel Test-1] TestBase - Quitting Browser
+[INFO ] 2024-03-20 15:27:04.747 [TestNG-test-Parallel Test-1] TestBase - Opening chrome Browser
+[INFO ] 2024-03-20 15:27:05.959 [TestNG-test-Parallel Test-1] TestBase - Configuring 5 second explicit wait
+[INFO ] 2024-03-20 15:27:05.971 [TestNG-test-Parallel Test-1] TestBase - Navigating to: https://opensource-demo.orangehrmlive.com/
+[INFO ] 2024-03-20 15:27:09.804 [TestNG-test-Parallel Test-1] TestBase - Typing: admin12, into: By.name: username
+[INFO ] 2024-03-20 15:27:10.477 [TestNG-test-Parallel Test-1] TestBase - Typing: 123, into: By.name: password
+[INFO ] 2024-03-20 15:27:10.630 [TestNG-test-Parallel Test-1] TestBase - Clicking: By.tagName: button
+[DEBUG] 2024-03-20 15:27:10.630 [TestNG-test-Parallel Test-1] TestBase - Using Native Selenium Click
+[INFO ] 2024-03-20 15:27:11.939 [TestNG-test-Parallel Test-1] TestBase - Quitting Browser
+[INFO ] 2024-03-20 15:27:12.089 [TestNG-test-Parallel Test-1] TestBase - Opening chrome Browser
+[INFO ] 2024-03-20 15:27:13.374 [TestNG-test-Parallel Test-1] TestBase - Configuring 5 second explicit wait
+[INFO ] 2024-03-20 15:27:13.379 [TestNG-test-Parallel Test-1] TestBase - Navigating to: https://opensource-demo.orangehrmlive.com/
+[INFO ] 2024-03-20 15:27:16.208 [TestNG-test-Parallel Test-1] TestBase - Typing: Admin1, into: By.name: username
+[INFO ] 2024-03-20 15:27:16.918 [TestNG-test-Parallel Test-1] TestBase - Typing: ***00**, into: By.name: password
+[INFO ] 2024-03-20 15:27:17.093 [TestNG-test-Parallel Test-1] TestBase - Clicking: By.tagName: button
+[DEBUG] 2024-03-20 15:27:17.094 [TestNG-test-Parallel Test-1] TestBase - Using Native Selenium Click
+[INFO ] 2024-03-20 15:27:18.495 [TestNG-test-Parallel Test-1] TestBase - Quitting Browser
+[INFO ] 2024-03-20 15:27:18.630 [TestNG-test-Parallel Test-1] TestBase - Opening chrome Browser
+[INFO ] 2024-03-20 15:27:19.862 [TestNG-test-Parallel Test-1] TestBase - Configuring 5 second explicit wait
+[INFO ] 2024-03-20 15:27:19.866 [TestNG-test-Parallel Test-1] TestBase - Navigating to: https://opensource-demo.orangehrmlive.com/
+[INFO ] 2024-03-20 15:27:25.539 [TestNG-test-Parallel Test-1] TestBase - Typing: test, into: By.name: username
+[INFO ] 2024-03-20 15:27:26.234 [TestNG-test-Parallel Test-1] TestBase - Typing: 123, into: By.name: password
+[INFO ] 2024-03-20 15:27:26.393 [TestNG-test-Parallel Test-1] TestBase - Clicking: By.tagName: button
+[DEBUG] 2024-03-20 15:27:26.393 [TestNG-test-Parallel Test-1] TestBase - Using Native Selenium Click
+[INFO ] 2024-03-20 15:27:27.817 [TestNG-test-Parallel Test-1] TestBase - Quitting Browser
+[INFO ] 2024-03-20 15:27:27.956 [TestNG-test-Parallel Test-1] TestBase - Opening chrome Browser
+[INFO ] 2024-03-20 15:27:29.188 [TestNG-test-Parallel Test-1] TestBase - Configuring 5 second explicit wait
+[INFO ] 2024-03-20 15:27:29.193 [TestNG-test-Parallel Test-1] TestBase - Navigating to: https://opensource-demo.orangehrmlive.com/
+[INFO ] 2024-03-20 15:27:33.198 [TestNG-test-Parallel Test-1] TestBase - Typing: user, into: By.name: username
+[INFO ] 2024-03-20 15:27:33.860 [TestNG-test-Parallel Test-1] TestBase - Typing: 369, into: By.name: password
+[INFO ] 2024-03-20 15:27:34.009 [TestNG-test-Parallel Test-1] TestBase - Clicking: By.tagName: button
+[DEBUG] 2024-03-20 15:27:34.009 [TestNG-test-Parallel Test-1] TestBase - Using Native Selenium Click
+[INFO ] 2024-03-20 15:27:35.277 [TestNG-test-Parallel Test-1] TestBase - Quitting Browser
+[INFO ] 2024-03-20 15:30:25.846 [main] TestBase - Opening chrome Browser
+[INFO ] 2024-03-20 15:30:28.255 [main] TestBase - Configuring 5 second explicit wait
+[INFO ] 2024-03-20 15:30:28.429 [main] TestBase - - Performing assignment 3/5 test case
+[INFO ] 2024-03-20 15:30:28.429 [main] TestBase - Navigating to: https://practicetestautomation.com/practice-test-login/
+[INFO ] 2024-03-20 15:30:33.753 [main] TestBase - - Logging in with invalid credentials
+[INFO ] 2024-03-20 15:30:33.754 [main] TestBase - Typing: student, into: By.id: username
+[INFO ] 2024-03-20 15:30:33.891 [main] TestBase - Typing: incorrectPassword, into: By.id: password
+[INFO ] 2024-03-20 15:30:34.030 [main] TestBase - Clicking: By.id: submit
+[DEBUG] 2024-03-20 15:30:34.030 [main] TestBase - Using Native Selenium Click
+[INFO ] 2024-03-20 15:30:34.092 [main] TestBase - - Performing assertion for error message
+[INFO ] 2024-03-20 15:30:34.184 [main] TestBase - Quitting Browser
