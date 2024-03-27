@@ -43,5 +43,4 @@ public class StepDefinitions {
     public void closeBrowser() {
         driver.quit();
     }
-
 }

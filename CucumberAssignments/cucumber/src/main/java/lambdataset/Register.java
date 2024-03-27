@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class Register {
-
     private final WebDriver driver;
     private final String url = "https://ecommerce-playground.lambdatest.io/index.php?route=account/register";
     private final By firstNameInput = By.id("input-firstname");
@@ -25,7 +24,6 @@ public class Register {
         driver.navigate().to(url);
         return this;
     }
-
 
     public Account registerAccount(String firstname, String lastname, String email, String telephone, String password) {
         enterNewAccountInfo(firstname, lastname, email, telephone, password);
@@ -51,6 +49,4 @@ public class Register {
     private void agreePrivacyPolicy() {
         driver.findElement(privatePolicyCheckbox).click();
     }
-
-
 }

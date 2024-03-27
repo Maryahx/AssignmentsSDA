@@ -11,7 +11,6 @@ public class Account {
         this.driver = driver;
     }
 
-
     public String readSuccessMessage() {
         return driver.findElement(accountCreatedMsg).getText();
     }
