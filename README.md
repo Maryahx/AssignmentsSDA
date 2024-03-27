@@ -1,0 +1,3 @@
+Week 07:
+  Task 1 - Register account test with fluent page object approach | ☑️ (Done in both Cucumber and TestNG)
+  Task 2 - Scenario Outline                                       | 🚧 ...
