@@ -13,6 +13,7 @@ public class Register {
     private final By passwordInput = By.id("input-password");
     private final By confirmPasswordInput = By.id("input-confirm");
     private final By noSubscribeRadioButton = By.xpath("//label[@for='input-newsletter-no']");
+    private final By yesSubscribeRadioButton = By.xpath("//label[@for='input-newsletter-yes']");
     private final By privatePolicyCheckbox = By.xpath("//label[@for='input-agree']");
     private final By continueBtn = By.xpath("//input[@value='Continue']");
 
@@ -25,28 +26,51 @@ public class Register {
         return this;
     }
 
-    public Account registerAccount(String firstname, String lastname, String email, String telephone, String password) {
-        enterNewAccountInfo(firstname, lastname, email, telephone, password);
-        noSubscription();
-        agreePrivacyPolicy();
+    public Register enterFirstName(String firstName) {
+        driver.findElement(firstNameInput).sendKeys(firstName);
+        return this;
+    }
+
+    public Register enterLastName(String lastName) {
+        driver.findElement(lastNameInput).sendKeys(lastName);
+        return this;
+    }
+
+    public Register enterEmail(String email) {
+        driver.findElement(emailInput).sendKeys(email);
+        return this;
+    }
+
+    public Register enterTelephone(String telephone) {
+        driver.findElement(telephoneInput).sendKeys(telephone);
+        return this;
+    }
+
+    public Register enterPassword(String password) {
+        driver.findElement(passwordInput).sendKeys(password);
+        return this;
+    }
+
+    public Register confirmPassword(String password) {
+        driver.findElement(confirmPasswordInput).sendKeys(password);
+        return this;
+    }
+    public Register subscribe() {
+        driver.findElement(yesSubscribeRadioButton).click();
+        return this;
+    }
+    public Register dontSubscribe() {
+        driver.findElement(noSubscribeRadioButton).click();
+        return this;
+    }
+
+    public Register agreeToPrivacyPolicy() {
+        driver.findElement(privatePolicyCheckbox).click();
+        return this;
+    }
+
+    public Account submitRegistration() {
         driver.findElement(continueBtn).click();
         return new Account(driver);
-    }
-
-    private void enterNewAccountInfo(String firstname, String lastname, String email, String telephone, String password) {
-        driver.findElement(firstNameInput).sendKeys(firstname);
-        driver.findElement(lastNameInput).sendKeys(lastname);
-        driver.findElement(emailInput).sendKeys(email);
-        driver.findElement(telephoneInput).sendKeys(telephone);
-        driver.findElement(passwordInput).sendKeys(password);
-        driver.findElement(confirmPasswordInput).sendKeys(password);
-    }
-
-    private void noSubscription() {
-        driver.findElement(noSubscribeRadioButton).click();
-    }
-
-    private void agreePrivacyPolicy() {
-        driver.findElement(privatePolicyCheckbox).click();
     }
 }
