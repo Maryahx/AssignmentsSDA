@@ -41,6 +41,6 @@ public class StepDefinitions {
 
     @After()
     public void closeBrowser() {
-        driver.quit();
+        driver.close();
     }
 }
