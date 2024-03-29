@@ -1,6 +1,8 @@
 package task1lambdatest;
 
 import io.cucumber.java.After;
+import io.cucumber.java.AfterAll;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -13,7 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class StepDefinitions {
-    WebDriver driver;
+    private static WebDriver driver;
     Account account;
     Register register;
 
@@ -41,6 +43,6 @@ public class StepDefinitions {
 
     @After()
     public void closeBrowser() {
-        driver.close();
+        driver.quit();
     }
 }
