@@ -26,14 +26,23 @@ public class StepDefinitions {
     }
 
     @When("I navigate to LambdatestPlayground site")
-    public void i_Navigate_To_Lambdataset_Playground_Site() {
+    public void i_navigate_To_Lambdataset_Playground_site() {
         register = new Register(driver).goTo();
     }
 
     @And("I enter my registration info {string}, {string}, {string}, {string}, {string}")
     public void i_enter_my_registration_info(String firstname, String lastname, String email, String telephone, String password) {
         email = "maria" + System.currentTimeMillis() + "@email.com";
-        account = new Register(driver).registerAccount(firstname, lastname, email, telephone, password);
+        account = new Register(driver)
+                .enterFirstName(firstname)
+                .enterLastName(lastname)
+                .enterEmail(email)
+                .enterTelephone(telephone)
+                .enterPassword(password)
+                .confirmPassword(password)
+                .subscribe()
+                .agreeToPrivacyPolicy()
+                .submitRegistration();
     }
 
     @Then("I should be registered successfully")
