@@ -27,7 +27,7 @@ public class StepDefinitions {
 
     @When("I navigate to LambdatestPlayground site")
     public void i_navigate_To_Lambdataset_Playground_site() {
-        register = new Register(driver).goTo();
+        new Register(driver).goTo();
     }
 
     @And("I enter my registration info {string}, {string}, {string}, {string}, {string}")
