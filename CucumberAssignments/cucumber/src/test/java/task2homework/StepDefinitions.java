@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 
+
 public class StepDefinitions {
     WebDriver driver;
     Wait<WebDriver> wait;
@@ -24,8 +25,8 @@ public class StepDefinitions {
     }
 
     @Then("user waits for {int} seconds")
-    public void user_waits_for_seconds(Integer seconds) {
-        wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+    public void user_waits_for_seconds(Integer seconds) throws InterruptedException {
+        Thread.sleep(seconds * 1000);
     }
 
     @Then("verifies that the page title contains the word {string}")
