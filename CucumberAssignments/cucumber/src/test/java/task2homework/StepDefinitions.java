@@ -6,12 +6,10 @@ import io.cucumber.java.en.Then;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Wait;
+
 
 public class StepDefinitions {
     WebDriver driver;
-    Wait<WebDriver> wait;
-
 
     @Given("user goes to the {string}")
     public void user_goes_to_the(String url) {
