@@ -1,0 +1,174 @@
+{
+        "info": {
+        "_postman_id": "c38cee61-4806-45bd-afd5-eb76be216b70",
+        "name": "PetStore_Books",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "34276479"
+        },
+        "item": [
+        {
+        "name": "GetBooks",
+        "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+        "raw": "{{baseUrl}}",
+        "host": [
+        "{{baseUrl}}"
+        ]
+        }
+        },
+        "response": []
+        },
+        {
+        "name": "CreateBook",
+        "event": [
+        {
+        "listen": "prerequest",
+        "script": {
+        "exec": [
+        ""
+        ],
+        "type": "text/javascript",
+        "packages": {}
+        }
+        },
+        {
+        "listen": "test",
+        "script": {
+        "exec": [
+        ""
+        ],
+        "type": "text/javascript",
+        "packages": {}
+        }
+        }
+        ],
+        "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+        "mode": "raw",
+        "raw": "{\r\n  \"id\": {{$randomInt}},\r\n  \"title\": \"{{$randomWord}}\",\r\n  \"description\": \"{{$randomLoremSentence}}\",\r\n  \"pageCount\": {{$randomInt}},\r\n  \"excerpt\": \"{{$randomLoremParagraph}}\",\r\n  \"publishDate\": \"{{$isoTimestamp}}\" \r\n}",
+        "options": {
+        "raw": {
+        "language": "json"
+        }
+        }
+        },
+        "url": {
+        "raw": "{{baseUrl}}",
+        "host": [
+        "{{baseUrl}}"
+        ]
+        }
+        },
+        "response": []
+        },
+        {
+        "name": "GetBookById",
+        "protocolProfileBehavior": {
+        "disableBodyPruning": true
+        },
+        "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+        "mode": "raw",
+        "raw": "{\r\n  \"id\": {{bookId}},\r\n  \"title\": \"{{$randomWord}}\",\r\n  \"description\": \"{{$randomLoremSentence}}\",\r\n  \"pageCount\": {{$randomInt}},\r\n  \"excerpt\": \"{{$randomLoremParagraph}}\",\r\n  \"publishDate\": \"{{$isoTimestamp}}\" \r\n}",
+        "options": {
+        "raw": {
+        "language": "json"
+        }
+        }
+        },
+        "url": {
+        "raw": "{{baseUrl}}/{{bookId}}",
+        "host": [
+        "{{baseUrl}}"
+        ],
+        "path": [
+        "{{bookId}}"
+        ]
+        }
+        },
+        "response": []
+        },
+        {
+        "name": "UpdateBook",
+        "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+        "mode": "raw",
+        "raw": "{\r\n  \"id\": {{bookId}},\r\n  \"title\": \"{{$randomWord}}\",\r\n  \"description\": \"{{$randomLoremSentence}}\",\r\n  \"pageCount\": {{$randomInt}},\r\n  \"excerpt\": \"{{$randomLoremParagraph}}\",\r\n  \"publishDate\": \"{{$isoTimestamp}}\" \r\n}",
+        "options": {
+        "raw": {
+        "language": "json"
+        }
+        }
+        },
+        "url": {
+        "raw": "{{baseUrl}}/{{bookId}}",
+        "host": [
+        "{{baseUrl}}"
+        ],
+        "path": [
+        "{{bookId}}"
+        ]
+        }
+        },
+        "response": []
+        },
+        {
+        "name": "DeleteBook",
+        "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+        "raw": "{{baseUrl}}/{{bookId}}",
+        "host": [
+        "{{baseUrl}}"
+        ],
+        "path": [
+        "{{bookId}}"
+        ]
+        }
+        },
+        "response": []
+        }
+        ],
+        "event": [
+        {
+        "listen": "prerequest",
+        "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [
+        ""
+        ]
+        }
+        },
+        {
+        "listen": "test",
+        "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [
+        ""
+        ]
+        }
+        }
+        ],
+        "variable": [
+        {
+        "key": "baseUrl",
+        "value": "https://fakerestapi.azurewebsites.net/api/v1/Books"
+        },
+        {
+        "key": "bookId",
+        "value": "3",
+        "type": "string"
+        }
+        ]
+        }
