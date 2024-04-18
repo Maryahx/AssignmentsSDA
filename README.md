@@ -1,6 +1,12 @@
-<h1>Week 07:</h1>
-<span style="font-size: smaller;">Status: Submitted ✅</span>
+<h1>Week 08:</h1>
+<span style="font-size: smaller;">Status: In Progress 🚧</span>
 <pre>
-    Task 1 - Register account test with fluent page object approach | ☑️ (Done in both Cucumber and TestNG)
-    Task 2 - Scenario Outline                                       | ☑️
+    Homework 01 | ✅
+    Homework 02 | ✅
+    Homework 03 | ✅
+    Homework 04 | ✅
+    Homework 05 | -
+    Homework 06 | -
+    Homework 07 | -
+    Homework 08 | -
 </pre>
