@@ -44,5 +44,3 @@ public class Homework04 {
        And
            "text" is "To keep ReqRes free, contributions towards server costs are appreciated!" ☑️
     */
-
-
