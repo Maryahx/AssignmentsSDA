@@ -4,13 +4,10 @@ import base_urls.ReqresUrl;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 
 public class Homework08 extends ReqresUrl {
