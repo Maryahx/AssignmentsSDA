@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/marya/IdeaProjects/AssignmentsSDA/ApiAssignments/src/test/java/HomeworkW10/homework13">
+        <classes>
+            <class name="HomeworkW10.homework13.CreateUser"></class>
+            <class name="HomeworkW10.homework13.ReadUser"></class>
+            <class name="HomeworkW10.homework13.UpdateUser"></class>
+            <class name="HomeworkW10.homework13.DeleteUser"></class>
+        </classes>
+    </test>
+</suite>
