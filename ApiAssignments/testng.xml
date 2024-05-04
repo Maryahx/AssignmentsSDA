@@ -2,12 +2,26 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true"
-          name="C:/Users/marya/IdeaProjects/AssignmentsSDA/ApiAssignments/src/test/java/HomeworkW10/homework13">
+          name="C:/Users/marya/IdeaProjects/AssignmentsSDA/ApiAssignments/src/test/java/HomeworkW10">
         <classes>
+                            <!-- Homework 13 -->
             <class name="HomeworkW10.homework13.CreateUser"></class>
             <class name="HomeworkW10.homework13.ReadUser"></class>
             <class name="HomeworkW10.homework13.UpdateUser"></class>
             <class name="HomeworkW10.homework13.DeleteUser"></class>
+
+                            <!-- Homework 15 -->
+            <class name="HomeworkW10.homework15.CreateUser"></class>
+            <class name="HomeworkW10.homework15.ReadUser"></class>
+            <class name="HomeworkW10.homework15.UpdateUser"></class>
+            <class name="HomeworkW10.homework15.DeleteUser"></class>
+
+                             <!-- Homework 16 -->
+            <class name="HomeworkW10.homework16.AddContact"></class>
+            <class name="HomeworkW10.homework16.ReadContact"></class>
+            <class name="HomeworkW10.homework16.UpdateContact"></class>
+            <class name="HomeworkW10.homework16.DeleteContact"></class>
+
         </classes>
     </test>
 </suite>
